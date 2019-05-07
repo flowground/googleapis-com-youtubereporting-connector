@@ -1,0 +1,77 @@
+{
+    "type": "object",
+    "properties": {
+        "onBehalfOfContentOwner": {
+            "type": "string"
+        },
+        "access_token": {
+            "type": "string"
+        },
+        "alt": {
+            "type": "string",
+            "enum": [
+                "json",
+                "media",
+                "proto"
+            ],
+            "default": "json"
+        },
+        "callback": {
+            "type": "string"
+        },
+        "fields": {
+            "type": "string"
+        },
+        "key": {
+            "type": "string"
+        },
+        "oauth_token": {
+            "type": "string"
+        },
+        "prettyPrint": {
+            "type": "boolean",
+            "default": true
+        },
+        "quotaUser": {
+            "type": "string"
+        },
+        "uploadType": {
+            "type": "string"
+        },
+        "upload_protocol": {
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "A job creating reports of a specific type.",
+            "properties": {
+                "createTime": {
+                    "description": "The creation date/time of the job.",
+                    "format": "google-datetime",
+                    "type": "string"
+                },
+                "expireTime": {
+                    "description": "The date/time when this job will expire/expired. After a job expired, no\nnew reports are generated.",
+                    "format": "google-datetime",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "The server-generated ID of the job (max. 40 characters).",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name of the job (max. 100 characters).",
+                    "type": "string"
+                },
+                "reportTypeId": {
+                    "description": "The type of reports this job creates. Corresponds to the ID of a\nReportType.",
+                    "type": "string"
+                },
+                "systemManaged": {
+                    "description": "True if this a system-managed job that cannot be modified by the user;\notherwise false.",
+                    "type": "boolean"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

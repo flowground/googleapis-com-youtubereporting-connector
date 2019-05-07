@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "createdAfter": {
+            "type": "string"
+        },
+        "jobId": {
+            "required": true,
+            "type": "string"
+        },
+        "onBehalfOfContentOwner": {
+            "type": "string"
+        },
+        "pageSize": {
+            "type": "integer"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "startTimeAtOrAfter": {
+            "type": "string"
+        },
+        "startTimeBefore": {
+            "type": "string"
+        },
+        "prettyPrint": {
+            "type": "boolean",
+            "default": true
+        },
+        "quotaUser": {
+            "type": "string"
+        },
+        "uploadType": {
+            "type": "string"
+        },
+        "upload_protocol": {
+            "type": "string"
+        }
+    }
+}
